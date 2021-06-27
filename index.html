@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Jogo da velha </title>
+</head>
+<body>
+    <header id="cabeçalho">
+        <h1>Jogo da Velha</h1>
+    </header>
+    <main id="principal">
+        <div id="p1" class="jogo"></div>
+        <div id="p2" class="jogo"></div>
+        <div id="p3" class="jogo"></div>
+        <div id="p4" class="jogo"></div>
+        <div id="p5" class="jogo"></div>
+        <div id="p6" class="jogo"></div>
+        <div id="p7" class="jogo"></div>
+        <div id="p8" class="jogo"></div>
+        <div id="p9" class="jogo"></div>
+    </main>
+    <button id="novo" onclick="começo()">Novo Jogo</button>
+    <section id="informações">
+        <div id="usuario1">
+            <table id="tabela">
+                <caption id="nome"><input type="text" placeholder="Jogador 1" maxlength="20" id="nome1" class="nome"><button id="jgd1" class="enviar"></button></caption>
+                <tr><td id="pontuação">Pontuação:</td><td class="valor" id="pont1">0</td><td id="identificador">O</td></tr>
+            </table>
+        </div>
+        <div id="usuario2">
+            <table id="tabela">
+                <caption id="nome"><input type="text" placeholder="Jogador 2" maxlength="20" id="nome2" class="nome"><button id="jgd2" class="enviar"></button></caption>
+                <tr><td id="pontuação">Pontuação:</td><td class="valor" id="pont2">0</td><td id="identificador">X</td></tr>
+            </table>
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
